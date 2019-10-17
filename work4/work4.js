@@ -22,6 +22,7 @@ for (let i=1;i<=level;++i ){
         str +='<tr>'
         for (var j=1;j<=i;++j){
             //拼接单元格
+            //九九乘法
             str +='<td>'+j+'*'+i+'='+(j*i)+'</td>'
         }
         str +='</tr>'
