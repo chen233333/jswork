@@ -26,7 +26,6 @@ str ='<table border="1">'
 for(let i=9;i>0;--i){
     str +='<tr>'
     for(var j=i;j>0;--j){
-     //九九乘法
         str +='<td>'+j+'*'+i+'='+(j*i)+'</td>'
     }
     str +='</tr>'
