@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<head>
     <meta charset="uft-8">
-    <title>陈楷荣的</title>
-<script>
-   
-</script>
+    <title>陈楷荣的冒泡排序和插入排序</title>
+</head>
     <body>
- <h2 align="center">别看了，说的就是你</h2>
-    </body>
+     <p>待排序数据:<input id="origin" type="text" value="7,6,5,4,3,2,1"/></p>
+     <p><button onclick='sort("bubble")'>冒泡序列</button>
+    <button onclick='sort("insert")'>插入排序</button></p>
+    <p>排序过程演示</p>
+    <div id='Anim'></div>
+</body>
+<script src="utils.js"></script>
+<script src="index.js"></script>
 </html>
