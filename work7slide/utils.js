@@ -50,7 +50,7 @@ for (const key in row) {
 showElement.innerHTML = str
 //如果定位指针不是-1（-1是最后一条记录），就调用延时方法调用slideShow函数显示下一条记录以形成动画效果
     if (pos[0] != -1)
-        setTimeout("showLog(logValues,showDiv)",200)//^毫秒，即运行快慢
+        setTimeout("showLog(logValues,showDiv)",300)//^毫秒，即运行快慢
 }
 
 //插入排序
