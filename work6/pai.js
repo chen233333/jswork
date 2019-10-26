@@ -6,7 +6,7 @@ function calculate(){
     if(!isNaN(num)){
         //设置圆周率输入框的值
         document.getElementById('pai').value=pi(num)
-    }
+    } 
 }
 //声明阶乘函数n！factorial()
 function factorial(n){

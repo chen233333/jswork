@@ -23,9 +23,12 @@ str +='</table>'
 document.getElementById('table2').innerHTML = str
 //倒九九乘法表
 str ='<table border="1">'
+//行
 for(let i=9;i>0;--i){
     str +='<tr>'
+    //列
     for(var j=i;j>0;--j){
+//行乘以列等于积
         str +='<td>'+j+'*'+i+'='+(j*i)+'</td>'
     }
     str +='</tr>'
