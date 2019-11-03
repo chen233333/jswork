@@ -33,15 +33,5 @@ function stat(){
         (r, e) => (r[e]++ || (r[e] = 1), r), {}
         )
     console.log(obj)
- 
-        // for (let i = 1;i < obj.length; i++){
-        //     for (let j =  i ; j > 0 ; j--){
-        //         if (obj[j-1]>obj[j]) {
-        //             [obj[j - 1],obj[j]] = [obj[j],obj[j-1]]
-        //         }
-        //     }
-        // }
-        // return obj
-    
     document.getElementById('result').innerText=JSON.stringify(obj)
 }
