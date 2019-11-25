@@ -11,12 +11,12 @@ body{
  .nextyear{
      float:right;
  }
- .box{
+ .box {
      margin: 0 auto;
      width :720px;
  }
  .title{
-     background: pink
+     background: cornsilk;
  }
  table{
      height :160px;

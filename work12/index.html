@@ -2,11 +2,11 @@
 <head>
     <meta charset="uft-8">
     <title>陈楷荣的万年历</title>
-    <link rel="stylesheet" type="test/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="delyear">
-        <span class="preyear" data-year="" onclick="setCalendar(this.dataset.yeat)"></span>
+    <div class="selyear">
+        <span class="preyear" id="preyear" data-year="" onclick="setCalendar(this.dataset.yeat)"></span>
         <span id="curyear"></span>
         <span class="nextyear" id="nextyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
         <div class="box" id="cal"></div>
