@@ -1,17 +1,36 @@
-<html>
-<head>
-    <meta charset="uft-8">
-    <title>陈楷荣的万年历</title>
-    <link rel="stylesheet" type="text/css" href="index1.css">
-</head>
-<body>
-    <div class="selyear">
-        <span class="preyear" id="preyear" data-year="" onclick="setCalendar(this.dataset.yeat)"></span>
-        <span id="curyear"></span>
-        <span class="nextyear" id="nextyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>陈楷荣的万年历</title>
+        <link rel="stylesheet" type="text/css" href="./index1.css">
+        <style>
+            span{
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="selyear">
+            <span class="preyear" id="preyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
+            <span id="curyear"></span>
+            <span class="nextyear" id="nextyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
         <div class="box" id="cal"></div>
-    </div>
-</body>
-
-<script src="index1.js"></script>
-</html>
+    </body>
+    
+    <script>
+        var year1 = new Date().getFullYear()
+        var pre = year1-1
+        var next = year1+1
+        document.getElementById('curyear').setAttribute('data-year', year1);
+        document.getElementById('preyear').setAttribute('data-year', pre);
+        document.getElementById('nextyear').setAttribute('data-year', next);
+        document.getElementById('curyear').innerText = year1
+        document.getElementById('preyear').innerText = "<<"+pre
+        document.getElementById('nextyear').innerText = next+ ">>"
+    </script>
+    <script src="calendar1.js"></script>
+    <script src="index1.js"></script>
+    </html>
