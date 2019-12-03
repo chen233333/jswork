@@ -1,4 +1,4 @@
-.box{
+.box {
     margin: 0 auto;
     position: relative;
     background: url(ms.jpg);
@@ -7,15 +7,15 @@
     height: 378px;
 }
 
-.box div{
+.box div {
     float: left;
     width: 50px;
     height: 50px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin-left: 5px;
     line-height:50px;
     text-align: center;
-    color: salmon;
+    color: red;
     position: relative;
     top: 328px;
     left: 350px;
