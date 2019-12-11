@@ -27,17 +27,17 @@ $('smallBox').onmouseover=function(event){
     var maskX=boxX-$('mask').offsetWidth/2;
     var maskY=boxY-$('mask').offsetHeight/2;
     //
-    if(maxkX<0){
+    if(maskX<0){
         maskX=0;
     }
-    if(maxkX>$('smallBox').offsetWidth-$('mask').offsetWidth){
-        maxkX=$('smallBox').offsetWidth-$('mask').offsetWidth;
+    if(maskX>$('smallBox').offsetWidth-$('mask').offsetWidth){
+        maskX=$('smallBox').offsetWidth-$('mask').offsetWidth;
     }
     if(maskY<0){
         maskY=0;
     }
-    if(maxkY>$('smallBox').offsetHeight-$('mask').offsetHeight){
-        maxkY=$('smallBox').offsetHeight-$('mask').offsetHeight;
+    if(maskY>$('smallBox').offsetHeight-$('mask').offsetHeight){
+        maskY=$('smallBox').offsetHeight-$('mask').offsetHeight;
     }
     //
     $('mask').style.left=maskX+'px';
@@ -45,7 +45,7 @@ $('smallBox').onmouseover=function(event){
     //
     var bigImgToMove=$('bigImg').offsetWidth-$('bigBox').offsetWidth;
     //
-    var bigImgToMove=$('smallBox').offsetWidth-$('mask').offsetWidth;
+    var maskToMove=$('smallBox').offsetWidth-$('mask').offsetWidth;
     //
     var rate =bigImgToMove/maskToMove;
     //
