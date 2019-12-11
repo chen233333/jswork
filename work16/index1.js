@@ -26,7 +26,9 @@ function animate(obj,option) {
          return obj.currentStyle[attr];
      }
    }
-   var obj=document.getElementById('box')
-   obj.onclick=function () {
-       animate(obj,{'left':200,'top':50});
-   }
+   var obj = document.getElementById('box');
+  obj.onclick = function() {
+    let left = parseInt((Math.random()*800)+100);
+    let top = parseInt((Math.random()*800)+100);
+    animate(obj, {'left': left, 'top': top});
+  };

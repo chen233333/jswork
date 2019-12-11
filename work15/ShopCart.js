@@ -54,7 +54,7 @@
          };
 
          item.del.onclick = function() {
-             if (confirm('您确定要删除此商品吗')) {
+             if (confirm('您确定要删除此商品吗?')) {
                  tmp.parentNode.removeChild(tmp);
                  cart.del(item);
                  cart.updateTotal();
