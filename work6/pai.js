@@ -2,11 +2,14 @@
 function calculate(){
     //读取阶数输入框的数值
     let num = document.getElementById('num').value 
+    //判断这个是不是数字
     num = parseInt(num)&&Number(num)
     if(!isNaN(num)){
         //设置圆周率输入框的值
         document.getElementById('pai').value=pi(num)
-    } 
+    } else{
+        alert ('请输入数字')
+    }
 }
 //声明阶乘函数n！factorial()
 function factorial(n){

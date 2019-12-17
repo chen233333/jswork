@@ -17,10 +17,15 @@ return arr
 }
 //插入序列
 function insertSort(str) {
+    //把字符串切分成数组
     let arr = str.split(',')
+    //比较轮数，数组有多少个数字，就比较数组长度
     for (let i = 1;i < arr.length; i++){
+            //从第一个开始比较相邻的两个数值
         for (let j =  i ; j > 0 ; j--){
+            //比较相邻的两个元素，如果左边的大，那么就把大的交换到右边
             if (arr[j-1]>arr[j]) {
+                //使用结构赋值的方法，把两个元素交换位置
                 [arr[j - 1], arr[j]] = [arr[j], arr[j-1]]
             }
         }
