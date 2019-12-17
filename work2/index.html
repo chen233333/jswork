@@ -3,7 +3,7 @@
         <meta charset="uft-8">
         <title>陈楷荣的简单网页应用</title>
         <script>
-        var password =prompt('请输入陈楷荣的密码')
+        var password =prompt('请输入陈楷荣的密码','密码不能为空')//prompt函数的第二个参数用于设置弹出的输入框中的默认文本
         if (password=='123456'){
             alert ('密码输入正确')
         }else{
@@ -16,7 +16,7 @@
         </script>
     </head>
     <body >
-        <input type="button" value="设为红色" onclick="color('red')">
+        <input type="button" value="设为红色" onclick="color('red')" //不推荐使用此方法> 
         <input type="button" value="设为蓝色" onclick="color('blue')">
         <input type="button" value="设为黄色" onclick="color('yellow')">
         <input type="button" value="设为自定义" onclick="color('#22ee00')">

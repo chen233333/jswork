@@ -40,7 +40,7 @@ function pi(num){
         let dividend =factorial(i)
          //声明阶乘被除数divisor，并调用oddFactorial函数取值
         let divisor=oddFactorial(i)
-            //累计汇总值
+            //累计汇总d值
          sum += (dividend/divisor)
     }
         //返回圆周率
