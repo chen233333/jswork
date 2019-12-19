@@ -62,6 +62,6 @@ function success(obj, msg){
 //失败
 function error(obj, msg){
     obj.className = 'error';
-    obj.innerHTML = msg + ',请重新输入';
+    obj.innerHTML = msg + '，请重新输入';
     }
 }
