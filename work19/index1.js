@@ -21,7 +21,7 @@ document.getElementById('upload').onclick = function () {
             }
             let reg=/^http(s)?:\/\/(.*?)\//
             let downurl =xhr.responseURL.match(reg)[0]+name.slice(2,name.length-1)
-            down.innerHTML = `文件上传成功。<a href=${name}>下载文件${name}</a>`;
+            down.innerHTML = `文件上传成功。<a href=${downurl}>下载文件${downurl}</a>`;
         }
     };
     xhr.open('POST', 'http://139.9.81.203:8090/upload');
