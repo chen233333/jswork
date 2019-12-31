@@ -2,7 +2,7 @@ var jms=null
 var timeHandle=null;
 var xmlhttp=new XMLHttpRequest()
 xmlhttp.onreadystatechange=function(){
-    if(xmlhttp.readyState==4&&xmlhttp.status==200){
+    if(xmlhttp.readyState== 4 &&xmlhttp.status==200){
      try{
          let ajaxData=JSON.parse(xmlhttp.responseText)
          result=ajaxData.map((val,index)=>{return index+1+":"+val.name+"--"+val.score})
@@ -57,13 +57,16 @@ function init (rowCount,colCount,minLandMineCount,maxLandMineCount){
         landMineCountElement.innerHTML=count;
     };
     //为“游戏开始”按钮绑定事件
-    beginButton.onclick=function(){
+    beginButton.onclick=function(){~
         jms.play();//初始化
+
         //显示地雷个数
         landMineCountElement.innerHTML=jms.landMineCount;
+
         //开始
         jms.begin();
         this.disabled="disable"
+        
         //更新花费时间更多
         timeHandle=setInterval(function(){
             timeShow.innerHTML=parseInt((new Date()-jms.beginTime)/1000);

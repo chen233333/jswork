@@ -13,11 +13,11 @@
         this.maxLandMineCount=maxLandMineCount||20;//
         this.arrs=[];
         this.beginTime=null;//
-        this.endTime=null;
-        this.currentSetpCount=0;
-        this.endCallBack=null;
-        this.landMineCallBack=null;
-        this.doc.oncontextmenu=function(){
+        this.endTime=null;//
+        this.currentSetpCount=0;//
+        this.endCallBack=null;//
+        this.landMineCallBack=null;//
+        this.doc.oncontextmenu=function(){//
             return false;
         }; 
         this.drawMap();
@@ -288,5 +288,4 @@
                     }; 
 
                     window.JMS=JMS;
-                
         }) ();
