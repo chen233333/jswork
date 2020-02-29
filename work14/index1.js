@@ -1,3 +1,4 @@
+//获取红、黄、绿灯以及倒计时的元素对象
 var lamp={
     red:{
         obj:document.getElementById('red'),

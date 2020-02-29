@@ -32,17 +32,17 @@
          let tmp = this.tmp.cloneNode(true);
          let item = new Item(tmp, data);
          let cart = this;
-
+        //勾选
          item.check.onclick = function () {
              cart.updateTotal();
          };
-
+         //增加数量         
          item.add.onclick = function() {
              item.num.textContent = ++item.data.num;
              item.updateSubtotal()
              cart.updateTotal();
          };
-
+         //减少数量
          item.reduce.onclick = function() {
              if (item.data.num > 1) {
                  item.num.textContent = --item.data.num;
@@ -52,7 +52,7 @@
                  alert('至少选择一件，如果不需要，请直接删除');
              }
          };
-
+         //删掉商品
          item.del.onclick = function() {
              if (confirm('您确定要删除此商品吗?')) {
                  tmp.parentNode.removeChild(tmp);
@@ -60,11 +60,11 @@
                  cart.updateTotal();
              }
          };
-
+         //更新小计
          item.updateSubtotal();
-
+        //保存新增的商品对象
          this.items.push(item);
-
+        //放入购物车容器中
          this.bottom.before(tmp);
      },
 
